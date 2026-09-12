@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#31312c", "on-tertiary-fixed-variant": "#005323", "tertiary": "#001906", "on-primary-fixed": "#121c2a", "surface-container-highest": "#e5e2db", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb59e", "on-error-container": "#93000a", "on-surface": "#1c1c18", "error": "#ba1a1a", "on-surface-variant": "#44474c", "surface-container": "#f1eee7", "on-primary-container": "#8690a1", "on-secondary-fixed": "#3a0b00", "on-primary": "#ffffff", "secondary": "#9d4225", "on-tertiary-fixed": "#00210a", "primary-container": "#1f2937", "tertiary-fixed-dim": "#79db8d", "background": "#fcf9f2", "primary": "#0a1422", "surface-bright": "#fcf9f2", "secondary-container": "#fd8c68", "surface-container-high": "#ebe8e1", "surface": "#fcf9f2", "on-secondary-container": "#742508", "surface-container-low": "#f6f3ec", "inverse-primary": "#bdc7d9", "surface-container-lowest": "#ffffff", "surface-tint": "#555f6f", "tertiary-fixed": "#95f8a7", "tertiary-container": "#003011", "on-error": "#ffffff", "outline": "#75777c", "on-tertiary-container": "#40a25a", "primary-fixed-dim": "#bdc7d9", "on-primary-fixed-variant": "#3d4756", "on-background": "#1c1c18", "on-secondary-fixed-variant": "#7e2c10", "on-secondary": "#ffffff", "inverse-on-surface": "#f3f0e9", "surface-variant": "#e5e2db", "outline-variant": "#c5c6cc", "primary-fixed": "#d9e3f6", "surface-dim": "#dcdad3", "secondary-fixed": "#ffdbd0", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "margin": "3rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "display": [ "Plus Jakarta Sans" ], "caption": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "display": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm shrink-0"><img alt="Logo La Tienda Retail" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U-F_aTElmtaoN9r2RVsrpjKrxJQYwxvM7wj3UWlCRhnh6oFq5vFGsCw1ygDbeovRCzK8rh1IdyLP1JKcEE4IAdJfGwufWSa_mVqM6KVNWM2bZabvRIxh9Nu72t9VmwYFcXtfejLg5Cel-D45SmOIbLLC-3ehGoROyqdtXEJKPF_eR_8BK0YzHt4agglH3tiHLTgI7fAhJ71c6DWpk4N2Gr6pUS-2zvth6iqRGcEBTglK3ExYb8_HXwGg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">La Tienda</span></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#">Catálogo</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-nosotros" href="#">Sobre Nosotros</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ubicacion-y-horarios" href="#">Ubicación y Horarios</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a aria-current="page" class="transition-colors text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-lowest border border-outline-variant/60 rounded-lg"><span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Abierto Hoy hasta 7:00 PM</span></div><a class="hidden md:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="tel:50223456789"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="font-label-md text-label-md font-semibold">(502) 2345-6789</span></a><div class="flex items-center pl-space-xs border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGg5VFq3GqedXM0xxndEKRWGwHHCF5nwn2ODFzy1uQczta1-tdIrICJWtINwxSCAN8dbF0mOBPqrYu9upiV9dsjCFgvsV-PcI_qf-zC9Btb74yS5FSaupvCixZ9wa-dtOmhSjdqwh-eSRSqbpPHeqSUYgApYdSco2fHCrEHNDbO6N1PYnzH5e2HM273d3GTeFytMdfgxm5dQF_oONDfBG0H_IGnBtknzvAgQx5r1ZWo0A7pGmefEE"/></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<section class="w-full relative overflow-hidden bg-surface-container-low py-space-xl md:py-space-xl">
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin relative z-10">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm mb-space-sm uppercase tracking-wider">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Atención Personalizada
+          </div>
+<h1 class="font-display text-display text-primary tracking-tight">Contacto &amp; Preguntas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+            Estamos disponibles tanto en nuestro showroom físico en Zona 14 como por canales digitales directos. Resolveremos tus consultas de inventario, reservas y visitas privadas.
+          </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-2 rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">storefront</span>
+</div>
+<div class="pr-2">
+<p class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Tienda Física</p>
+<p class="font-label-md text-label-md text-primary font-semibold">Abierta Lu–Sáb 9-19h</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Escríbenos</span>
+<h2 class="font-headline-md text-headline-md text-primary">Envíanos un Mensaje</h2>
+</div>
+<span class="material-symbols-outlined text-[28px] text-outline-variant">edit_note</span>
+</div>
+<form class="space-y-space-md" id="boutique-contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="fullName">
+                  Nombre y apellido <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg py-3 px-3.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-outline" id="fullName" placeholder="Ej. Sofía Valenzuela" required="" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="emailAddr">
+                  Correo electrónico <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg py-3 px-3.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-outline" id="emailAddr" placeholder="sofia@ejemplo.gt" required="" type="email"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="phoneNum">
+                  Teléfono / WhatsApp <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg py-3 px-3.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-outline" id="phoneNum" placeholder="+502 5555-0123" required="" type="tel"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-primary font-semibold" for="subjectSelect">
+                  Asunto de contacto <span class="text-secondary">*</span>
+</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg py-3 px-3.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all appearance-none cursor-pointer" id="subjectSelect" required="">
+<option disabled="" selected="" value="">Selecciona una opción</option>
+<option value="consulta">Consulta de producto</option>
+<option value="tallas">Disponibilidad de tallas</option>
+<option value="apartado">Apartado de prendas (24 hrs)</option>
+<option value="mayorista">Visita mayorista o comercial</option>
+<option value="otro">Otro requerimiento</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[20px] text-outline">
+                    expand_more
+                  </span>
+</div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-primary font-semibold" for="messageText">
+                  ¿En qué podemos ayudarte? <span class="text-secondary">*</span>
+</label>
+<span class="font-caption text-caption text-on-surface-variant">Describe prenda o referencia</span>
+</div>
+<textarea class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg p-3.5 focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-outline resize-none" id="messageText" placeholder="Indícanos si buscas un corte específico, color o deseas probarte alguna pieza vista en nuestro escaparate digital..." required="" rows="4"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">verified</span>
+<span class="font-caption text-caption text-on-surface-variant">Respuesta promedio: &lt; 2 horas hábiles</span>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 bg-primary text-on-primary font-title-md text-title-md rounded-lg shadow-sm hover:bg-primary-container active:scale-[0.98] transition-all" type="submit">
+<span>Enviar Mensaje</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<div class="hidden p-4 rounded-lg bg-surface-container font-label-md text-label-md text-on-surface flex items-center gap-3" id="form-feedback">
+<span class="material-symbols-outlined text-[22px] text-on-tertiary-container">check_circle</span>
+<span>¡Mensaje recibido! Nos comunicaremos contigo vía WhatsApp o correo electrónico hoy mismo.</span>
+</div>
+</form>
+</div>
+<div class="lg:col-span-5 space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Canales Directos</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Información Boutique</h3>
+</div>
+<div class="space-y-3">
+<a class="flex items-start gap-3.5 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="https://maps.google.com/?q=Zona+14+Ciudad+de+Guatemala" target="_blank">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ubicación Física</p>
+<p class="font-title-md text-title-md text-primary font-semibold truncate">4a Avenida 11-24, Zona 14</p>
+<p class="font-caption text-caption text-on-surface-variant">Ciudad de Guatemala, Guatemala</p>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-1 transition-transform self-center">arrow_forward</span>
+</a>
+<a class="flex items-start gap-3.5 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="tel:+50223456789">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Línea Directa Boutique</p>
+<p class="font-title-md text-title-md text-primary font-semibold">+502 2345-6789</p>
+<p class="font-caption text-caption text-on-surface-variant">Atención en sala de ventas</p>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-1 transition-transform self-center">arrow_forward</span>
+</a>
+<a class="flex items-start gap-3.5 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group" href="mailto:hola@latienda.gt">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Atención por Correo</p>
+<p class="font-title-md text-title-md text-primary font-semibold">hola@latienda.gt</p>
+<p class="font-caption text-caption text-on-surface-variant">Consultas generales &amp; facturas</p>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-1 transition-transform self-center">arrow_forward</span>
+</a>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold">WhatsApp Concierge</p>
+<p class="font-caption text-caption text-on-surface-variant">Reservas instantáneas en tienda</p>
+</div>
+</div>
+<a class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" href="https://wa.me/50223456789" target="_blank">
+<span>Chatear</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary">Comunidad &amp; Redes</h3>
+<span class="font-caption text-caption text-on-surface-variant">En vivo</span>
+</div>
+<div class="space-y-2">
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold">@latienda_gt</p>
+<p class="font-caption text-caption text-on-surface-variant">Instagram Oficial</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">32.4K</span>
+<p class="font-caption text-caption text-outline">seguidores</p>
+</div>
+</a>
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold">La Tienda Retail</p>
+<p class="font-caption text-caption text-on-surface-variant">Facebook</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">18.9K</span>
+<p class="font-caption text-caption text-outline">seguidores</p>
+</div>
+</a>
+<a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-semibold">@latienda.retail</p>
+<p class="font-caption text-caption text-on-surface-variant">TikTok Looks &amp; Drops</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">45.1K</span>
+<p class="font-caption text-caption text-outline">seguidores</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Preguntas Frecuentes</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Todo lo que necesitas saber antes de tu visita</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Respuestas transparentes sobre cómo apartar piezas, opciones de pago en el local, facilidades de parqueo y garantías físicas.
+        </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-3">
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button aria-expanded="true" class="w-full p- space-md text-left flex items-center justify-between gap-4 select-none p-5 focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-primary font-semibold">
+              ¿Puedo apartar un producto visto en la web para probármelo en la tienda física?
+            </span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-200 rotate-180">
+              expand_more
+            </span>
+</button>
+<div class="faq-content px-5 pb-5 pt-0 block">
+<p class="font-body-md text-body-md text-on-surface-variant">
+              ¡Sí! Puedes escribirnos directamente a WhatsApp con el nombre o captura de la prenda que viste y te la reservamos en vestidores por <span class="font-semibold text-primary">24 horas</span> sin compromiso de compra.
+            </p>
+</div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="w-full text-left flex items-center justify-between gap-4 select-none p-5 focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-primary font-semibold">
+              ¿Qué métodos de pago aceptan en el local?
+            </span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-200">
+              expand_more
+            </span>
+</button>
+<div class="faq-content px-5 pb-5 pt-0 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Aceptamos efectivo, todas las tarjetas de crédito y débito Visa y Mastercard, transferencias bancarias locales inmediatas y pagos sin contacto (Apple Pay y billeteras NFC habilitadas).
+            </p>
+</div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="w-full text-left flex items-center justify-between gap-4 select-none p-5 focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-primary font-semibold">
+              ¿Cuentan con parqueo para clientes?
+            </span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-200">
+              expand_more
+            </span>
+</button>
+<div class="faq-content px-5 pb-5 pt-0 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Sí, el edificio boutique cuenta con estacionamiento subterráneo privado con seguridad 24/7. La primera hora corre por nuestra cuenta al presentar factura por consumos o compras mayores a <span class="font-semibold text-primary">Q.150</span>.
+            </p>
+</div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="w-full text-left flex items-center justify-between gap-4 select-none p-5 focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-primary font-semibold">
+              ¿Tienen políticas de cambios o devoluciones?
+            </span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-200">
+              expand_more
+            </span>
+</button>
+<div class="faq-content px-5 pb-5 pt-0 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tienes hasta <span class="font-semibold text-primary">15 días continuos</span> tras tu compra presentando tu ticket impreso o digital. Las prendas deben mantener sus etiquetas intactas, sin signos de uso ni alteraciones.
+            </p>
+</div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button aria-expanded="false" class="w-full text-left flex items-center justify-between gap-4 select-none p-5 focus:outline-none" onclick="toggleFaq(this)" type="button">
+<span class="font-title-md text-title-md text-primary font-semibold">
+              ¿Realizan envíos si no puedo ir a la tienda?
+            </span>
+<span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-200">
+              expand_more
+            </span>
+</button>
+<div class="faq-content px-5 pb-5 pt-0 hidden">
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Sí, despachamos con mensajería exprés el mismo día en la Ciudad de Guatemala (pedidos antes de las 14:00 hrs) y a todos los departamentos de Guatemala en un plazo seguro de <span class="font-semibold text-primary">24 a 48 horas</span> hábiles.
+            </p>
+</div>
+</div>
+</div>
+<div class="mt-space-xl p-space-md rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md max-w-3xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-semibold">¿Tienes una pregunta específica?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Nuestro equipo de estilismo y atención está listo para asesorarte en directo.</p>
+</div>
+</div>
+<a class="shrink-0 px-5 py-2.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors inline-flex items-center gap-2" href="https://wa.me/50223456789" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Hablar con un asesor</span>
+</a>
+</div>
+</div>
+</section>
+<section class="w-full py-space-xl">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-stretch">
+<div class="md:col-span-8 h-80 md:h-96 rounded-xl overflow-hidden shadow-sm relative">
+<div class="w-full h-full bg-cover bg-center rounded-xl" data-location="Zona 14, Ciudad de Guatemala, Guatemala" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMwSc3iDBfKxqo0ThetV1uZMKnDZl-GFfmlYQnUi6YtrL-LPZskmMpvk7LnxqU3FMvk9ISxOgJSMDFGRcIHH4N1RUSPNwx8-Gck5_BYF-yvjLVcbiJDh0KJsUE77JkmYTpxNsXaaX7oFkacCpdkCij06yRvmaZxlPOnasvqDmYe7-Bz2ia4ZMZQY4VaKj43L4Y7Y4TCIVqNWTAlPbHZheseuHJw26b40uccbMhrrSClGT6I8QjO1I')"></div>
+<div class="absolute bottom-4 left-4 right-4 md:right-auto md:max-w-md bg-surface-container-lowest/95 backdrop-blur-sm p-4 rounded-lg shadow-md">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">pin_drop</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-title-md text-title-md text-primary font-semibold">La Tienda Flagship</p>
+<p class="font-body-md text-body-md text-on-surface-variant">4a Avenida 11-24, Zona 14. Acceso con garita y parqueo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">calendar_clock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Horarios de Visita</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Pasa a conocernos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+              Disfruta un café de especialidad mientras exploras colecciones exclusivas y pruebas tus prendas favoritas.
+            </p>
+<div class="space-y-2">
+<div class="flex justify-between py-2 px-3 rounded bg-surface-container-low font-body-md text-body-md">
+<span class="font-semibold text-primary">Lunes a Viernes</span>
+<span class="text-on-surface-variant">9:00 AM - 7:00 PM</span>
+</div>
+<div class="flex justify-between py-2 px-3 rounded bg-surface-container-low font-body-md text-body-md">
+<span class="font-semibold text-primary">Sábado</span>
+<span class="text-on-surface-variant">9:00 AM - 7:00 PM</span>
+</div>
+<div class="flex justify-between py-2 px-3 rounded bg-surface-container-low font-body-md text-body-md">
+<span class="font-semibold text-primary">Domingo</span>
+<span class="text-on-surface-variant">10:00 AM - 4:00 PM</span>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="w-full py-2.5 px-4 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors inline-flex items-center justify-center gap-2" href="https://maps.google.com/?q=Zona+14+Ciudad+de+Guatemala" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Cómo llegar con Waze / Maps</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+      if (isExpanded) {
+        content.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        if (icon) icon.classList.remove('rotate-180');
+      } else {
+        content.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    }
+
+    function handleFormSubmit() {
+      const feedback = document.getElementById('form-feedback');
+      if (feedback) {
+        feedback.classList.remove('hidden');
+        feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      const form = document.getElementById('boutique-contact-form');
+      if (form) {
+        form.reset();
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">La Tienda</span></div><p class="font-body-md text-body-md text-on-surface-variant">Boutique física contemporánea de indumentaria, calzado y objetos de autor. Diseño con tacto y calidez.</p><p class="font-label-md text-label-md text-on-surface font-medium pt-space-xs">4a Avenida 11-24, Zona 14, Ciudad de Guatemala</p></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Explorar</h3><ul class="space-y-2"><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#">Catálogo de Colección</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-nosotros" href="#">Sobre Nosotros</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">Preguntas Frecuentes</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Horarios Boutique</h3><div class="p-space-sm bg-surface-container-lowest rounded-lg border border-outline-variant/40 space-y-1.5"><div class="flex justify-between items-center text-on-surface"><span class="font-label-md text-label-md font-semibold">Lunes a Sábado</span><span class="font-label-sm text-label-sm text-on-surface-variant">9:00 AM - 7:00 PM</span></div><div class="flex justify-between items-center text-on-surface"><span class="font-label-md text-label-md font-semibold">Domingo</span><span class="font-label-sm text-label-sm text-on-surface-variant">10:00 AM - 4:00 PM</span></div></div><div class="flex items-center gap-2 pt-1"><span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Pick-up en tienda y citas privadas</span></div></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Atención &amp; Redes</h3><p class="font-body-md text-body-md text-on-surface-variant">Escríbenos directamente para reservas y confirmación de inventario en vivo:</p><a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/50223456789" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp Directo</a><div class="flex items-center gap-space-sm pt-space-xs"><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span></a></div></div></div><div class="mt-space-xl pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><span class="font-caption text-caption">© 2025 La Tienda Retail Boutique. Todos los derechos reservados.</span><div class="flex items-center gap-space-md"><a class="font-caption text-caption hover:text-on-surface transition-colors" href="#">Términos &amp; Condiciones</a><a class="font-caption text-caption hover:text-on-surface transition-colors" href="#">Políticas de Privacidad</a></div></div></div></footer></body></html>

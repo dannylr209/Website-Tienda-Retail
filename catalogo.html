@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#31312c", "on-tertiary-fixed-variant": "#005323", "tertiary": "#001906", "on-primary-fixed": "#121c2a", "surface-container-highest": "#e5e2db", "error-container": "#ffdad6", "secondary-fixed-dim": "#ffb59e", "on-error-container": "#93000a", "on-surface": "#1c1c18", "error": "#ba1a1a", "on-surface-variant": "#44474c", "surface-container": "#f1eee7", "on-primary-container": "#8690a1", "on-secondary-fixed": "#3a0b00", "on-primary": "#ffffff", "secondary": "#9d4225", "on-tertiary-fixed": "#00210a", "primary-container": "#1f2937", "tertiary-fixed-dim": "#79db8d", "background": "#fcf9f2", "primary": "#0a1422", "surface-bright": "#fcf9f2", "secondary-container": "#fd8c68", "surface-container-high": "#ebe8e1", "surface": "#fcf9f2", "on-secondary-container": "#742508", "surface-container-low": "#f6f3ec", "inverse-primary": "#bdc7d9", "surface-container-lowest": "#ffffff", "surface-tint": "#555f6f", "tertiary-fixed": "#95f8a7", "tertiary-container": "#003011", "on-error": "#ffffff", "outline": "#75777c", "on-tertiary-container": "#40a25a", "primary-fixed-dim": "#bdc7d9", "on-primary-fixed-variant": "#3d4756", "on-background": "#1c1c18", "on-secondary-fixed-variant": "#7e2c10", "on-secondary": "#ffffff", "inverse-on-surface": "#f3f0e9", "surface-variant": "#e5e2db", "outline-variant": "#c5c6cc", "primary-fixed": "#d9e3f6", "surface-dim": "#dcdad3", "secondary-fixed": "#ffdbd0", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem", "margin": "3rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "display": [ "Plus Jakarta Sans" ], "caption": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "display-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "display": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "caption": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin h-20 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm shrink-0"><img alt="Logo La Tienda Retail" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U-F_aTElmtaoN9r2RVsrpjKrxJQYwxvM7wj3UWlCRhnh6oFq5vFGsCw1ygDbeovRCzK8rh1IdyLP1JKcEE4IAdJfGwufWSa_mVqM6KVNWM2bZabvRIxh9Nu72t9VmwYFcXtfejLg5Cel-D45SmOIbLLC-3ehGoROyqdtXEJKPF_eR_8BK0YzHt4agglH3tiHLTgI7fAhJ71c6DWpk4N2Gr6pUS-2zvth6iqRGcEBTglK3ExYb8_HXwGg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">La Tienda</span></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md underline decoration-secondary decoration-2 underline-offset-8"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#">Catálogo</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-nosotros" href="#">Sobre Nosotros</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ubicacion-y-horarios" href="#">Ubicación y Horarios</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">FAQ</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-lowest border border-outline-variant/60 rounded-lg"><span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Abierto Hoy hasta 7:00 PM</span></div><a class="hidden md:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="tel:50223456789"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="font-label-md text-label-md font-semibold">(502) 2345-6789</span></a><div class="flex items-center pl-space-xs border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGg5VFq3GqedXM0xxndEKRWGwHHCF5nwn2ODFzy1uQczta1-tdIrICJWtINwxSCAN8dbF0mOBPqrYu9upiV9dsjCFgvsV-PcI_qf-zC9Btb74yS5FSaupvCixZ9wa-dtOmhSjdqwh-eSRSqbpPHeqSUYgApYdSco2fHCrEHNDbO6N1PYnzH5e2HM273d3GTeFytMdfgxm5dQF_oONDfBG0H_IGnBtknzvAgQx5r1ZWo0A7pGmefEE"/></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Sub-Header & Breadcrumb Bar -->
+<section class="w-full bg-surface-container-low/80 py-space-md">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Catálogo Boutique</span>
+<span class="hidden sm:inline-block w-1 h-1 rounded-full bg-outline-variant mx-1"></span>
+<span class="hidden sm:inline-block font-caption text-caption text-secondary font-semibold uppercase tracking-wider">Edición 2025</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Inventario verificado en piso</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Zona 14, Ciudad de Guatemala</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Catalog Content Container -->
+<section class="w-full py-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Top Action Bar: Search, Counter, Sorting -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search input -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/70" id="product-search" placeholder="Buscar por prenda, material, diseñador o código..." type="text"/>
+</div>
+<!-- Product Count & Sorting -->
+<div class="flex flex-wrap items-center justify-between lg:justify-end gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+<span class="font-label-md text-label-md text-on-surface-variant" id="product-count">
+                Mostrando <strong class="text-primary font-semibold">12</strong> de <strong class="text-primary font-semibold">48</strong> productos disponibles en tienda
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant shrink-0" for="sort-select">Ordenar por:</label>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-primary font-label-md text-label-md py-2 pl-3.5 pr-8 rounded-lg focus:outline-none cursor-pointer" id="sort-select">
+<option value="recent">Más recientes</option>
+<option value="price-asc">Precio menor a mayor</option>
+<option value="price-desc">Precio mayor a menor</option>
+<option value="popular">Más populares</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Grid Layout: Sidebar (3 cols) + Product Grid (9 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT FILTER SIDEBAR -->
+<aside class="lg:col-span-3 space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<!-- Sidebar Header & Clear -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h3 class="font-title-md text-title-md text-primary font-semibold">Filtros</h3>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-secondary-container transition-colors underline decoration-secondary/40 font-medium" id="btn-clear-filters">
+                Limpiar filtros
+              </button>
+</div>
+<!-- Active Filter Badges -->
+<div class="space-y-2">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Filtros Activos</span>
+<div class="flex flex-wrap gap-1.5" id="active-chips-container">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-primary font-label-sm text-label-sm rounded-md shadow-xs">
+<span>Todas las categorías</span>
+<button class="hover:text-secondary"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-primary font-label-sm text-label-sm rounded-md shadow-xs">
+<span>En mostrador</span>
+<button class="hover:text-secondary"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+</div>
+</div>
+<!-- Category Section -->
+<div class="pt-space-sm space-y-2.5">
+<span class="font-label-md text-label-md text-primary font-semibold block">Categorías</span>
+<div class="space-y-2">
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-primary font-medium group-hover:text-secondary transition-colors">Todas</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">48</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Ropa y Prendas</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">24</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Accesorios y Bolsos</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">12</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Calzado</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">8</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Cuidado &amp; Hogar</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">4</span>
+</label>
+</div>
+</div>
+<!-- Local Brands / Designers -->
+<div class="pt-space-sm space-y-2.5">
+<span class="font-label-md text-label-md text-primary font-semibold block">Marcas / Diseñadores Locales</span>
+<div class="space-y-2">
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Atelier Urbano</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">15</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Cuero &amp; Co.</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">11</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Sol &amp; Sombra</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">8</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-secondary transition-colors">Básico Studio</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 bg-surface-container-low rounded-md">14</span>
+</label>
+</div>
+</div>
+<!-- Price Range Filter -->
+<div class="pt-space-sm space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">Rango de Precio</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold" id="price-val">Hasta Q.500.00</span>
+</div>
+<div class="space-y-2">
+<input class="w-full accent-secondary cursor-pointer" id="price-range" max="800" min="50" oninput="document.getElementById('price-val').innerText = 'Hasta Q.' + this.value + '.00'" type="range" value="500"/>
+<div class="flex justify-between text-on-surface-variant font-caption text-caption">
+<span>Q.50.00</span>
+<span>Q.400.00</span>
+<span>Q.800.00</span>
+</div>
+</div>
+</div>
+<!-- Availability Filter -->
+<div class="pt-space-sm space-y-2.5">
+<span class="font-label-md text-label-md text-primary font-semibold block">Disponibilidad en Tienda</span>
+<div class="space-y-2">
+<label class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<input checked="" class="mt-0.5 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface leading-tight">Disponible para entrega inmediata en mostrador</span>
+</label>
+<label class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer">
+<input class="mt-0.5 w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface leading-tight">Últimas unidades en showroom</span>
+</label>
+</div>
+</div>
+<!-- Apply Button -->
+<div class="pt-space-sm">
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span>
+                Aplicar Filtros
+              </button>
+</div>
+</div>
+<!-- Physical store note in sidebar -->
+<div class="bg-surface-container rounded-xl p-space-md space-y-2">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+<span class="font-label-md text-label-md font-semibold text-primary">Probadores Disponibles</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Toda la colección está planchada y lista para prueba en nuestros 4 vestidores privados.
+            </p>
+</div>
+</aside>
+<!-- RIGHT PRODUCT GRID (4 columns on large screens) -->
+<main class="lg:col-span-9">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial boutique display of an earthy beige natural linen midi dress draped elegantly on a minimalist wooden mannequin, warm afternoon store lighting, clean neutral linen aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdHoxHQ343H0QpwQL48Q57w1pspEmeMROWw7U6SuxcacAATICzY9Pc5j21kEKy7MlpgNGRLaAkbTRaDXsCssXXk4ThLKfBhMnSTD3IlgF05k10K0ezxEd-CYXB7wDhoh2H-dDW_9rpydzTvF6x34QGjq67CJItPjS8oLXNnGvKJYhtzlizWi8cA5nROrYU5hic0emp16kX2wf5E4y50Fv0l9bzUHekeCF5FGd4UtdC5cI1CVxI70Y"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm rounded-md shadow-xs">Nuevo</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Atelier Urbano</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Vestido midi de lino puro</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.420.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Handcrafted genuine tan cognac leather crossbody bag sitting on a smooth travertine stone podium inside a luxury retail boutique, natural daylight, rich textured leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVlgvgan_pZ9ZVxAx7XnGfN0Iz7lBoUH5Kg61dFtg92LZ7C2a7qVSN0KGVyoVb0avskgk4AvM1vhKwjaZOeMnzBLNgbk8NLBZaip0Rwnetrsi7JNgYwpOm3CcI1PVcVN4TdAr2nOhztzNWcwAiE_I6NrqS29Kq-diD7QPDhVw9DXkvOr_0gFc4AsxXgRUhWKodM-ChcYcMcdiRfXrR5COuzGyWOzCuBB7MXCbu3E5ard6qW0gxMOg"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm rounded-md shadow-xs">Exclusivo Tienda</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Cuero &amp; Co.</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Cartera crossbody artesanal</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.380.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pair of handcrafted dark brown Chelsea leather boots placed on natural oak shelving, polished artisan footwear in warm studio light, premium retail mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmTLCYNFGql1rfpWKWCooAgI88nEaJWKaTY74ab59nZcJv9QOFp71wvb22XauSbFpq5f8duCWv9MKPH_W6zV8vTF4hVG2533IuV2QjSLHhPSSlNpw0GGAvZUxTmMARRTzUeJeifuiWiPO1ZpSffoIiUYIF75qFHGb6SEyCIRlYLkukKGunMS9Rqo8Et2e0NkxFjYXy6gayrglGffFHP0wEuEJi0mgfCFGCGyfQdWC2TDklyF1leq8"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm rounded-md shadow-xs">En Stock</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Sol &amp; Sombra</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Botines Chelsea de cuero</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.560.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist wrist watch with brushed gunmetal case and natural caramel leather strap placed over a textured linen cloth, macro retail commercial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoR77EEudpt4YNzXZ0McO4b9jdg32SmQostzE9rExoVChQIu0gfSlFyODRCP0-SqvJiFN4S3xIqkAWPdhP8zEy7URHu2AoDy5eEmu4HKzScJGovJ3Lm6iXwb1yD2CgBkfhGbkv7lwYV5LRrJI_bua2ZpiS8OZzi6zjgGWdtdtqh5XKzMHSV3LMbMhxD59SBbUp_Q5aZGg90P63oW_CpQIHoIQX4rfCFbg9qAiq756iZOszROkHq0o"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm rounded-md shadow-xs">Nuevo</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Básico Studio</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Reloj minimalista con correa</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.340.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crisp tailored light sky-blue Oxford button-down shirt neatly folded with horn buttons on display table in a warm modern retail clothing shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVPLNjKKnTVwOMt6CSWXUAhZeTuzbx3HTRI_1vADQNLuqJt1lSceUUXE2STi8rVmMAq1Gl5zLoQxGz5qopgU5ZkhVuJZ7prmw5t39dQP1GzGObcLomTEKC1pC6XePqCwD7uEhhK_SbkIh3qDG5wvgn6TU_fiz0CW0tqneoxUNo9fllmxvTP-vADvd9IkA0H8yUuvOGHsgT0tho9slDJIzva0RHsQZApgg-1NyNeOLi-lkg8i0MxHw"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm rounded-md shadow-xs">En Stock</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Atelier Urbano</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Camisa Oxford 100% Algodón</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.240.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Wide brim wool felt Fedora hat in earthy olive-taupe shade resting on a carved wooden block in a boutique interior setting with subtle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnW5Iq7V7A7S7_GGjJxLs5P9OhPsSNlGxInThEPO2deJfnZlUgIE-n8GJneueJcTkU42hc6OrwW8UcCVAYO9C0ISQ0Wd0u-MhrFo4LZgbnPwdJS1zbgYz2izIspDHyDOo85rSm8XXxEW5iWhFWy61-pQRKFV3lk4cLCMNfjeRchR9ktDrtGnnPfcs6miXtFQwVvV67yj-jcZvMPYKMuujN2DYOozH13FsEfiT3sxtPpKQd-_73XvY"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm rounded-md shadow-xs">Exclusivo Tienda</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Sol &amp; Sombra</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Sombrero Fedora de lana</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.295.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Soft knitted cream-colored cashmere blend scarf draped over a raw ceramic vase in a warm modern retail store display with soft tactile textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZDWRdrK-D65mKchlU7aEHb8PRpg7naR28L41PuWYeiL0gl35D_UiyxHMRu9AOYQ-xg1aL_1iPHYg0KVrcWRCKLsQnm3oP2VYGSQXY6R0RJA0zZi2-WyQ9JhrCDCsl0UfxrJnQEM_VpWahta4BjSGK3uTGJsPbFiElUCg3HCtGcxmSM3to7b5h3kalIsgNfrKwewcpqqe60m4IW7yISQF5UVgm_FbrVMrj3mXLCMWhXKPJNg-_Hfg"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm rounded-md shadow-xs">En Stock</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Básico Studio</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Bufanda Cashmere Blend</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.190.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="relative overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavy vegetable-tanned leather belt rolled loosely with antique brass buckle on smooth sanded concrete block in warm boutique setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA52jAOWN5MxncNNC9Ix0AMLPzNLbJgvqY3s5nKQrDWXWHjyYHTn_95SAWIW0En6ZnOe1eCBmUCG_MbeFAeo8ss90Pue3AIu0o-3cvafFAuJHcW2tprNzcaPipMapnF0dYqAyvV0pApwzi4LK0Rg9tuOk9jVZ8hRXLTk97W7RfEv5vSZb70JmIEriivWsekN9lWC8S1DBF4g7gssCofuqSzuVSTSeVMmpPmngBJD7fP0w-F8fkd-JE"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm rounded-md shadow-xs">Nuevo</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface hover:text-secondary flex items-center justify-center shadow-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-3">
+<div class="space-y-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Cuero &amp; Co.</span>
+<h4 class="font-title-md text-title-md text-primary font-bold line-clamp-1">Cinturón artesanal de baqueta</h4>
+<p class="font-headline-sm text-headline-sm text-secondary font-bold">Q.165.00</p>
+</div>
+<div class="pt-2 border-t-0 space-y-2">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-container rounded-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-caption text-caption text-on-surface font-medium">🟢 En exhibición en tienda</span>
+</div>
+<button class="w-full py-2 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-md text-label-md rounded-lg transition-colors flex items-center justify-center gap-1.5">
+<span>Ver detalles</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination Bar -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Página 1 de 4</span>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-primary text-on-primary font-label-md text-label-md">1</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">2</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">3</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">4</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</section>
+<!-- Help & WhatsApp Direct Request Banner -->
+<section class="w-full mt-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="bg-primary text-on-primary rounded-2xl p-space-lg md:p-space-xl relative overflow-hidden shadow-md">
+<!-- Subtle warm accent glow inside banner -->
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-highest/20 rounded-full text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span class="font-label-sm text-label-sm font-semibold">Atención Personalizada en Piso</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold tracking-tight">¿Buscas una talla o color específico?</h3>
+<p class="font-body-lg text-body-lg text-on-primary/80">
+              Escríbenos por WhatsApp o visítanos en tienda física para probártelo. Te apartamos cualquier prenda hasta por 48 horas sin costo adicional.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<a class="px-5 py-3 bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-2 shadow-sm transition-colors" href="https://wa.me/50223456789?text=Hola,%20busco%20información%20sobre%20una%20prenda%20del%20catálogo" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Consultar por WhatsApp</span>
+</a>
+<a class="px-5 py-3 bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary font-label-md text-label-md font-semibold rounded-lg flex items-center justify-center gap-2 transition-colors" data-path="ubicacion-y-horarios" href="#">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+<span>Ver Ubicación &amp; Horarios</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for catalog controls
+  document.addEventListener('DOMContentLoaded', () => {
+    const clearBtn = document.getElementById('btn-clear-filters');
+    const chipsContainer = document.getElementById('active-chips-container');
+    const searchInput = document.getElementById('product-search');
+
+    if (clearBtn && chipsContainer) {
+      clearBtn.addEventListener('click', () => {
+        chipsContainer.innerHTML = '<span class="font-caption text-caption text-on-surface-variant italic">Sin filtros aplicados</span>';
+        const checkboxes = document.querySelectorAll('aside input[type="checkbox"]');
+        checkboxes.forEach(cb => cb.checked = false);
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const val = searchInput.value.trim();
+          if (val) {
+            alert('Filtrando catálogo en exhibición para: ' + val);
+          }
+        }
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">La Tienda</span></div><p class="font-body-md text-body-md text-on-surface-variant">Boutique física contemporánea de indumentaria, calzado y objetos de autor. Diseño con tacto y calidez.</p><p class="font-label-md text-label-md text-on-surface font-medium pt-space-xs">4a Avenida 11-24, Zona 14, Ciudad de Guatemala</p></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Explorar</h3><ul class="space-y-2"><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#">Catálogo de Colección</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-nosotros" href="#">Sobre Nosotros</a></li><li role="none"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#">Preguntas Frecuentes</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Horarios Boutique</h3><div class="p-space-sm bg-surface-container-lowest rounded-lg border border-outline-variant/40 space-y-1.5"><div class="flex justify-between items-center text-on-surface"><span class="font-label-md text-label-md font-semibold">Lunes a Sábado</span><span class="font-label-sm text-label-sm text-on-surface-variant">9:00 AM - 7:00 PM</span></div><div class="flex justify-between items-center text-on-surface"><span class="font-label-md text-label-md font-semibold">Domingo</span><span class="font-label-sm text-label-sm text-on-surface-variant">10:00 AM - 4:00 PM</span></div></div><div class="flex items-center gap-2 pt-1"><span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Pick-up en tienda y citas privadas</span></div></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-primary font-semibold">Atención &amp; Redes</h3><p class="font-body-md text-body-md text-on-surface-variant">Escríbenos directamente para reservas y confirmación de inventario en vivo:</p><a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/50223456789" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp Directo</a><div class="flex items-center gap-space-sm pt-space-xs"><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="p-2 bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span></a></div></div></div><div class="mt-space-xl pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><span class="font-caption text-caption">© 2025 La Tienda Retail Boutique. Todos los derechos reservados.</span><div class="flex items-center gap-space-md"><a class="font-caption text-caption hover:text-on-surface transition-colors" href="#">Términos &amp; Condiciones</a><a class="font-caption text-caption hover:text-on-surface transition-colors" href="#">Políticas de Privacidad</a></div></div></div></footer></body></html>
